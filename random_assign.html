@@ -1,0 +1,21 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>redirect</title>
+</head>
+
+<body>
+	<script>
+	var urls = ['https://nccuoop.wixsite.com/gwoti',  // 好 + w/o chatbot
+				'https://nccuoop.wixsite.com/gwtti',  // 好 + w/t chatbot
+				'https://nccuoop.wixsite.com/pwoti',  // 不好 + w/o chatbot
+				'https://nccuoop.wixsite.com/pwtti']; // 不好 + w/t chatbot
+	var min = 0;
+	var max = urls.length - 1; // index starts from 0
+	if(max != 0){
+		var random = Math.floor(Math.random() * (max - min + 1)); // [0,1)的隨機數*a(某數)會恆小於a, 再取最大整數
+		window.location.href = urls[random]; // range of random is [0,3]
+		}
+	</script>
+</body>
+</html>
