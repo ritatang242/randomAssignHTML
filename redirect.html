@@ -8,13 +8,13 @@
 	<script>
 	var urls = ['https://www.surveycake.com/s/QmWPn',  // gwoti  //  好  + w/o chatbot
 		    'https://www.surveycake.com/s/ydwZV',  // gwtti  //  好  + w/t chatbot
-		    'https://www.surveycake.com/s/3rp46',  // pwoti  // 不好 + w/o chatbot
+		    //'https://www.surveycake.com/s/3rp46',  // pwoti  // 不好 + w/o chatbot
 		    'https://www.surveycake.com/s/mMaRn']; // pwtti  // 不好 + w/t chatbot
 	var min = 0;
 	var max = urls.length - 1; // index starts from 0
 	if(max != 0){
 		var random = Math.floor(Math.random() * (max - min + 1)); // [0,1)的隨機數*a(某數)會恆小於a, 再取最大整數
-		window.location.href = urls[random]; // range of random is [0,3]
+		window.location.href = urls[random];
 		}
 	</script>
 </body>
